@@ -8,9 +8,9 @@ This is the source code for **'MAPGR: Multi-Agent Prompt-Guided Residual Diffusi
 ---
 
 <p align="center">
-  <img src="assets/teaser.png" width="800">
+  <img src="MAPGR.jpg" width="800">
   <br>
-  <em>Figure 1: [Brief description of your model's output or framework architecture].</em>
+  <em>Figure 1: Multi-Agent Prompt-Guided Residual Diffusion (MAPGR) organizes digital mural restoration as an evidence-propagation workflow driven by three collaborative agents. </em>
 </p>
 
 ## 📢 News
