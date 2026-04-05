@@ -1,0 +1,17 @@
+name: mapgr-py310-cu121
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - setuptools
+  - wheel
+  # Optional but commonly needed by OpenCV / image pipelines
+  - ffmpeg
+  - libjpeg-turbo
+  - zlib
+  - pip:
+      # Install PyTorch separately to match your server's CUDA 12.1 wheels:
+      #   pip install --index-url https://download.pytorch.org/whl/cu121 \
+      #     torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2
+      - -r requirements_py310_cu121.txt

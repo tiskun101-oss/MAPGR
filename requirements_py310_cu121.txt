@@ -1,0 +1,46 @@
+# MAPGR runtime deps for Python 3.10 + PyTorch 2.1.2 + CUDA 12.1
+#
+# Install PyTorch first (example):
+#   pip install --index-url https://download.pytorch.org/whl/cu121 \
+#     torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2
+#
+# Then:
+#   pip install -r requirements_py310_cu121.txt
+#
+# Notes:
+# - numpy<2 is required because code uses np.str (removed in numpy 2.0).
+# - All Hugging Face model loads are configured to work offline with local weights.
+
+accelerate==0.27.2
+einops==0.7.0
+ema-pytorch==0.4.2
+tqdm==4.66.1
+
+# Vision / I/O
+pillow==10.2.0
+opencv-python==4.9.0.80
+Augmentor==0.2.12
+pyyaml==6.0.1
+
+# Metrics
+numpy==1.26.4
+scipy==1.11.4
+scikit-image==0.22.0
+pytorch-fid==0.3.0
+lpips==0.1.4
+
+# Hugging Face (text encoder + optional local VLM/LLM agents)
+# transformers==4.48.0 requires huggingface-hub>=0.24.0,<1.0
+huggingface-hub==0.24.7
+transformers==4.48.0
+# transformers==4.48.0 depends on tokenizers>=0.21,<0.22
+tokenizers==0.21.0
+safetensors==0.4.2
+sentencepiece==0.1.99
+tiktoken==0.7.0
+protobuf==4.25.3
+regex==2023.12.25
+
+# Common utilities (kept explicit for reproducibility)
+filelock==3.13.1
+requests==2.31.0
