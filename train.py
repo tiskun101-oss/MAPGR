@@ -27,7 +27,7 @@ def parse_args():
     p.add_argument("--save_and_sample_every", type=int, default=2000)
     p.add_argument("--sampling_timesteps", type=int, default=20)
     p.add_argument("--timesteps", type=int, default=100)
-    p.add_argument("--train_num_steps", type=int, default=100000)
+    p.add_argument("--train_num_steps", type=int, default=20000)
     p.add_argument("--train_batch_size", type=int, default=8)
     p.add_argument("--train_lr", type=float, default=1e-4)
     p.add_argument("--gradient_accumulate_every", type=int, default=4)
